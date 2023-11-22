@@ -56,7 +56,7 @@ def create_histogram(ws, data, n_bins, x_label="", y_label="", title=""):
 
 def create_radar_chart(ws):
     rows = [
-        [ "Bulbs"],
+        ["", "Статистика играка"],
         ['fait'] + generate_random_data(1),
         ['push'] + generate_random_data(1),
         ['damage'] + generate_random_data(1),
@@ -77,7 +77,7 @@ def create_radar_chart(ws):
     chart.title = "Garden Centre Sales"
     chart.y_axis.delete = True 
 
-    ws.add_chart(chart, "A17")
+    ws.add_chart(chart, "A9")
 
 
 # Создаем книгу Excel
